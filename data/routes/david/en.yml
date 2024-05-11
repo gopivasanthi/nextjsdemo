@@ -28,3 +28,7 @@ placeholders:
           src: /data/media/img/StandingStone.png
           alt: David William
         StudentDob: '2012-05-04T00:00:00Z'
+        StudentAddress: |
+          09 Major Lane
+          Orland
+          Bucks 788DFD9

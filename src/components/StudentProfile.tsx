@@ -5,6 +5,7 @@ import {
   ImageFieldValue,
   NextImage,
   DateField,
+  RichText,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 
@@ -24,7 +25,7 @@ const StudentProfile = (props: StudentProfileProps): JSX.Element => (
     <Text tag="h5" field={props.fields.StudentId} />
     <NextImage field={props.fields.StudentProfilePic} height="100" width="60" />
     <DateField field={props.fields.StudentDob} render={(date) => date && date.toDateString()} />
-    <Text tag="p" field={props.fields.StudentAddress} />
+    <RichText field={props.fields.StudentAddress} />
   </div>
 );
 
