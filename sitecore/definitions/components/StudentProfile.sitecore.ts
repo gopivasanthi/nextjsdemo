@@ -15,6 +15,7 @@ export default function StudentProfile(manifest: Manifest): void {
       { name: 'StudentName', type: CommonFieldTypes.SingleLineText },
       { name: 'StudentProfilePic', type: CommonFieldTypes.Image },
       { name: 'StudentDob', type: CommonFieldTypes.Date },
+      { name: 'StudentAddress', type: CommonFieldTypes.SingleLineText }
     ],
     /*
     If the component implementation uses <Placeholder> or withPlaceholder to expose a placeholder,

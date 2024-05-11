@@ -14,6 +14,7 @@ type StudentProfileProps = ComponentProps & {
     StudentName: Field<string>;
     StudentProfilePic: Field<ImageFieldValue>;
     StudentDob: Field<string>;
+    StudentAddress: Field<string>;
   };
 };
 
@@ -22,10 +23,8 @@ const StudentProfile = (props: StudentProfileProps): JSX.Element => (
     <Text tag="h1" field={props.fields.StudentName} />
     <Text tag="h5" field={props.fields.StudentId} />
     <NextImage field={props.fields.StudentProfilePic} height="100" width="60" />
-    <DateField
-      field={props.fields.StudentDob}
-      render={(date) => date && date.toDateString()}
-    />
+    <DateField field={props.fields.StudentDob} render={(date) => date && date.toDateString()} />
+    <Text tag="p" field={props.fields.StudentAddress} />
   </div>
 );
 
